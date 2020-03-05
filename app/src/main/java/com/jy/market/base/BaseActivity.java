@@ -14,7 +14,7 @@ import butterknife.Unbinder;
  * Created by Boss on 2020/3/3.
  */
 //继承系统Activity 实现V层接口
-public abstract class BaseActivity<P extends IBasePresenter> extends AppCompatActivity implements IBaseView{
+public abstract class BaseActivity<V extends IBaseView,P extends IBasePresenter> extends AppCompatActivity implements IBaseView{
 
     //保存泛型对象
     protected P presenter;

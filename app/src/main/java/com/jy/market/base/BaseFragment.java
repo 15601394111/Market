@@ -20,7 +20,7 @@ import butterknife.Unbinder;
  */
 
 //创建Fragment基类，继承系统的Fragment 关联P层实现V层接口
-public abstract class BaseFragment<P extends IBasePresenter> extends Fragment implements IBaseView{
+public abstract class BaseFragment<V extends IBaseView,P extends IBasePresenter> extends Fragment implements IBaseView{
 
     protected P presenter;
     protected Unbinder mUnbinder;

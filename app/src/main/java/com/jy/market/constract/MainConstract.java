@@ -15,6 +15,6 @@ public interface MainConstract {
     }
 
     interface Presenter extends IBasePresenter<View>{
-        void getIndextData();
+        void getMainData();
     }
 }

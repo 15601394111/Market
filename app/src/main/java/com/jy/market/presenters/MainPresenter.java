@@ -14,7 +14,7 @@ import com.jy.market.utils.RxUtils;
 public class MainPresenter extends BasePresenter<MainConstract.View> implements MainConstract.Presenter{
 
     @Override
-    public void getIndextData() {
+    public void getMainData() {
         addDisposable(HttpManager.getInstance().getShop().getIndexData()
                 .compose(RxUtils.<IndexBean>rxScheduler())
                 .subscribeWith(new CommonSubscriber<IndexBean>(mView){
